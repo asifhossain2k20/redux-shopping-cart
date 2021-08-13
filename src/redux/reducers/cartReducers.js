@@ -4,7 +4,7 @@ const initialState ={
     cart:[]
 }
 
-const cardReducer = (state=initialState,action)=>{
+const cartReducers = (state=initialState,action)=>{
     switch(action.type){
         case ADD_TO_CART:
             const newId=action.id;
@@ -18,3 +18,5 @@ const cardReducer = (state=initialState,action)=>{
             return state;
     }
 }
+
+export default cartReducers;
